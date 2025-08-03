@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Ubuntu' "sans-serif"; 
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+a{
+    text-decoration: none; 
+}
+
+nav{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+nav > a.logo{
+    color: #000; 
+    font-size: 30px; 
+    color: #0f2182;
+    font-weight: bold; 
+    margin-left: 10px; 
+}
+
+nav .container{
+    padding: 0 40px;
+     
+}
+
+nav .container a{
+    color: black; 
+    margin-right: 20px; 
+}
+
+nav .container a:hover{
+    color: #ffb742; 
+    text-decoration: underline; 
+}
+
+nav .login{
+    margin-right: 20px; 
+}
+
+nav .login button{
+    margin-right: 14px; 
+    padding: 8px 14px; 
+    border: none;
+    cursor: pointer; 
+    background-color: transparent; 
+    transition: all 0.3s ease; 
+    border-radius: 4px; 
+}
+
+nav .login button.signup{
+    background-color: #000;
+    color: #fff; 
+    border-radius: 4px;
+    margin-right: 14px;  
+}
+
+nav .login button:nth-child(2):hover{
+    border: 1px solid grey;
+    background-color: grey; 
+}
+
+header{
+    padding: 0 80px; 
+    display: flex;
+    width: 100vw; 
+    height: calc(100vh - 80px); 
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 60px;
+    font-weight: bold;  
+}
+
+header .left .explain{
+    font-size: 15px; 
+    color: rgb(128,128,128);
+    margin-top: 10px; 
+}
+
+header .left a {
+    margin-top: 30px; 
+    display: flex; 
+    align-items: center;
+    background-color: #000; 
+    width: 150px; 
+    border-radius: 60px; 
+}
+
+header .left a span{
+    color: #fff;
+    margin: 7px 8px; 
+}
+
+header .left a i{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;   
+    color: #000; 
+    font-weight: bold; 
+}
+
+header img{
+    width: 500px; 
+    height: 500px; 
+    margin-left: 20px; 
+}
+
+img{
+    width: 200px; 
+    height: 200px; 
+}
+
+main{
+    padding: 20px;
+}
+
+main h2{
+    font-size: 30px; 
+    padding: 0 15px; 
+}
+
+main .cards-wrapper{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+}
+
+main .card-container{
+    width: 100vw; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0; 
+}
+
+main .card-container .separator{
+    background-color: lightgrey; 
+    width: 300px; 
+    height: 530px;
+    border-radius: 1.2rem; 
+    margin-top: 30px;
+    padding-top: 15px;
+    display: flex; 
+    justify-content: center;
+    border: 2px solid transparent;    
+    transition: border-color 0.3s ease;
+    
+}
+
+main .card-container .separator:nth-child(1):hover{
+    border-color: #a29bfe; 
+}
+
+main .card-container .separator:nth-child(2):hover{
+    border-color: #e17055; 
+}
+
+main .card-container .separator:nth-child(3):hover{
+    border-color: #00cec9; 
+}
+
+main .card-container .separator:nth-child(4):hover{
+    border-color: #fdcb6e; 
+}
+
+
+
+main .card-container .separator .back{
+    margin: 17px; 
+}
+
+main .card-container .separator .back .content{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+main .card-container .separator .back .content img{
+  padding: 5px; 
+}
+
+main .card-container .separator .back .content h3{
+    padding: 15px; 
+}
+
+main .card-container .separator .back .content p{
+
+    background-color: #f9f9fb;
+    max-width:250px; 
+    margin: 0 auto; 
+    padding: 25px;
+    font-size: 1.05rem;
+    line-height: 1.6;  
+    border-radius: 1.2rem; 
+    color: #333; 
+    text-align: center; 
+    box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+main .card-container .separator .back .content p span{
+    color: #304ffe; 
+}
+
+main .card-container .separator .back .content p:hover{
+    box-shadow: 10px 10px 12px rgba(0,0,0,0.1); 
+}
+
+main .view-more{
+    margin: 25px; 
+    display: flex; 
+    justify-content: center;
+    width: 100vw; 
+}
+
+main .view-more a{
+    margin-top: 20px; 
+    color: #6c5ce7;
+    font-weight: 600; 
+    display: flex; 
+    transition: all 0.3s ease; 
+}
+
+main .view-more a:hover{
+    background-color: #6c5ce7; 
+    color: #fff;
+    border-radius: 1.2rem;
+    padding: 4px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 배운점
+1. border가 hover시에 새로 생기면, 요소 실제 박스 크기(Box Model)가 커져서 내부 콘텐츠 레이아웃에도 영향을 줄 수 있다.*/
