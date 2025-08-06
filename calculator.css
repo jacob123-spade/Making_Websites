@@ -1,0 +1,75 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Arial', sans-serif; 
+}
+
+html{
+    background: linear-gradient(135deg,#a8edea, #fed6e3); 
+}
+
+.container{
+    height: 100vh; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box{
+    width: 300px; 
+    height: 500px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c3e50; 
+    border-radius: 30px; 
+}
+
+.container .box .main{
+    background-color: #cfd8dc;  
+    border-radius: 25px;
+    width: 200px; 
+    text-align: right; 
+    font-size: 35px; 
+    margin-top: 15px;
+}
+
+.container .box .main h2{
+    margin-right: 15px;
+}
+
+.container .calculator_buttons{
+    margin-top: 15px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    width: 100%; 
+    height: 400px; 
+}
+
+.container .calculator_buttons div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+    height: 25%; 
+}
+
+.container .calculator_buttons div button:nth-child(4){
+    background-color: #f39c12 ;
+}
+
+.container .calculator_buttons div button{
+    font-size: 30px; 
+    border: none; 
+    padding: 15px; 
+    background-color: #fff;
+    border-radius: 20px; 
+    transition: background-color 0.3s ease; 
+}
+
+.container .calculator_buttons div button:hover{
+    background-color: skyblue;  
+}
