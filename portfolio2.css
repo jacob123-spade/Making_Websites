@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Libertinus Sans',sans-serif; 
+}
+
+html{
+    background-color: #ffb742;
+}
+
+body{
+    margin: 0 30px; 
+}
+
+img{
+    width: 440px; 
+    height: 350px; 
+}
+
+.container-top{
+    margin: 20px 0;  
+    height: 70vh; 
+    background-color: lightgrey;
+}
+
+.container-top nav{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.container-top nav .title{
+    padding: 0 15px; 
+}
+
+.container-top nav .title h1{
+    font-size: 35px; 
+    font-weight: 600; 
+    color: #008080; 
+    text-transform: uppercase;
+}
+
+.container-top nav .list{
+    padding: 0 15px; 
+}
+
+.container-top nav .list ul{ 
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+}
+
+.container-top nav .list ul li{
+    margin-left: 45px; 
+    list-style: none; 
+}
+
+.container-top nav .list a{
+    text-decoration: none; 
+    color: #000; 
+    transition: color 0.3s ease; 
+    text-transform: uppercase;
+}
+
+.container-top nav .list a:hover{
+    color: #008080; 
+    text-decoration: underline; 
+}
+
+.container-top nav .hire-btn{
+    margin-right: 50px;
+}
+
+.container-top nav .hire-btn button{
+    border: none; 
+    padding: 10px 20px;
+    overflow: hidden; 
+    font-size: 13px; 
+    border-radius: 20px;
+    background-color: #008080; 
+    cursor: pointer;
+    transition: background-color 0.3s ease , color 0.3s ease; 
+}
+
+.container-top nav .hire-btn button:hover{
+    background-color: #ffb742;
+    color: white; 
+}
+
+.container-top nav .hire-btn button:active{
+    background-color: #006666; 
+}
+
+.container-top .simple-intro{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px; 
+}
+
+.container-top .simple-intro .left{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 100px; 
+}
+
+.simple-intro .left h1{
+    font-size: 55px; 
+    margin-left: 30px;
+    color: #003B3B;  
+}
+
+.simple-intro .left .email{
+    padding: 0 10px; 
+}
+
+.simple-intro .left .email a{
+    text-decoration: none; 
+    color: #FF8C00;
+    transition: text-decoration 0.3s ease;  
+}
+
+.simple-intro .left .email a:hover{
+    text-decoration: underline; 
+}
+
+.simple-intro .left .introduce{
+    padding: 10px; 
+}
+
+.simple-intro .left .introduce p{
+    font-size: 20px; 
+    font-weight: 600; 
+}
+
+.simple-intro .left .introduce p span{
+    color: #006666; 
+    font-weight: bold; 
+}
+
+.simple-intro .mid{
+    margin-top: 80px;
+    margin-right: 125px;  
+}
+
+.right {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 150px; 
+}
+
+.right .words{
+    font-size: 12px;
+    margin-right: 10px; 
+}
+
+.right .certification-icon{
+    padding: 15px; 
+}
+
+.right .certification-icon i{
+    font-size: 50px;
+    color: #ffb742; 
+}
+
+.container-bottom{
+    margin-top: 0; 
+    background-color: #fff;
+    width: 100%;
+    min-height: 100%;  
+    display: flex; 
+    justify-content: space-around;  
+}
+
+.container-bottom .cards-wrapper{
+    margin-top: 40px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 50px; 
+}
+
+
+.container-bottom .cards-wrapper .card{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 25px; 
+    padding: 10px 30px;  
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease-in-out;
+    cursor: pointer; 
+}
+
+.container-bottom .cards-wrapper .card:hover{
+    box-shadow: 0 20px 15px rgba(0,0,0,0.1);
+    transform: translateX(50px);
+}
+
+.cards-wrapper .card .icon1{
+    background-color: #006666; 
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;  
+}
+
+.cards-wrapper .card .icon2{
+    background-color: #ffb742; 
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff; 
+}
+
+.cards-wrapper .card .icon3{
+    background-color: blue; 
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.cards-wrapper .card .card-right{
+    padding: 5px; 
+}
+
+.cards-wrapper .card .card-right .subtitle{
+    font-size: 13px; 
+}
+
+.cards-wrapper .card .card-right .numprojects{
+    font-size: 11px; 
+    margin-top: 10px; 
+}
+
+.card .card-right .numprojects a{
+    text-decoration: none; 
+    color: black; 
+    transition: all 0.3s ease;  
+}
+
+.card .card-right .numprojects a:hover{
+    color: blue;
+    text-decoration: underline; 
+}
+
+.bottom-text{
+    margin-top: 45px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 35px; 
+
+}
+
+.bottom-text h2{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.bottom-text .explain p{
+    line-height: 30px;
+    font-size: 20px; 
+}
+
+.user{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 30px;
+}
+
+.user .completed, .num-user{
+    padding: 10px 30px; 
+}
+
+.user .completed span, .user .num-user span{
+    font-size: 40px; 
+    font-weight: bold; 
+}
+
+.user .completed p, .user .num-user p{
+    font-size: 13px; 
+}
+
+
+
+
+
+
